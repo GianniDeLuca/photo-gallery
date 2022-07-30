@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
 
+import { useRouter } from "next/router";
+
 import { Grid, Typography } from "@mui/material";
 
 interface ICategory {
@@ -10,8 +12,17 @@ interface ICategory {
 }
 
 export const Category: FC<ICategory> = ({ categoryTitle, categoryImage }) => {
+  const router = useRouter();
+
   return (
-    <Grid item xs={12} mb={2}>
+    <Grid
+      onClick={() => {
+        router.push(`/categories/${categoryTitle}`);
+      }}
+      item
+      xs={12}
+      mb={2}
+    >
       <Image
         src={categoryImage}
         height={300}
