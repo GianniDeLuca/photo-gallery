@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { NavBar } from "components/NavBar.component";
+import { NavBar } from "components/NavBar/NavBar.component";
 
 import { Box } from "@mui/material";
 
