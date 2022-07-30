@@ -1,5 +1,6 @@
-import { Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import { Grid } from "@mui/material";
+
+import { Category } from "components/Category/Category.component";
 
 const categories = [
   {
@@ -38,15 +39,7 @@ export const Categories = () => {
   return (
     <Grid container justifyContent="center" alignItems="center" spacing={2}>
       {categories.map((category) => (
-        <Grid key={category.categoryId} item xs={12} mb={2}>
-          <Image
-            src={category.categoryImage}
-            height={300}
-            width={300}
-            alt="placeholder image"
-          />
-          <Typography textAlign="center">{category.categoryTitle}</Typography>
-        </Grid>
+        <Category key={category.categoryId} {...category} />
       ))}
     </Grid>
   );
