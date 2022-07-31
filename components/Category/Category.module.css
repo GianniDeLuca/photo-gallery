@@ -1,0 +1,3 @@
+.imageWrapper:hover {
+  filter: opacity(70%);
+}
