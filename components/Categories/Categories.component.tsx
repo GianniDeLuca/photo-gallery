@@ -37,7 +37,7 @@ const categories = [
 
 export const Categories = () => {
   return (
-    <Grid container justifyContent="center" alignItems="center" spacing={2}>
+    <Grid container spacing={2}>
       {categories.map((category) => (
         <Category key={category.categoryId} {...category} />
       ))}

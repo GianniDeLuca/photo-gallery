@@ -23,17 +23,20 @@ export const Category: FC<ICategory> = ({ categoryTitle, categoryImage }) => {
       }}
       item
       xs={12}
+      sm={4}
       mb={2}
     >
-      <Box className={styles.imageWrapper}>
-        <Image
-          src={categoryImage}
-          height={300}
-          width={300}
-          alt="placeholder image"
-        />
+      <Box textAlign="center">
+        <Box className={styles.imageWrapper}>
+          <Image
+            src={categoryImage}
+            height={600}
+            width={600}
+            alt="placeholder image"
+          />
+        </Box>
+        <Typography textAlign="center">{categoryTitle}</Typography>
       </Box>
-      <Typography textAlign="center">{categoryTitle}</Typography>
     </Grid>
   );
 };
