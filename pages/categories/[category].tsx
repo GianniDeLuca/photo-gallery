@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { BaseLayout } from "layouts/BaseLayout";
 
-import { Typography, Box, Grid } from "@mui/material";
+import { Typography, Box, Grid, useTheme } from "@mui/material";
 import Image from "next/image";
 
 const CategoryPage: NextPage = () => {
@@ -10,7 +10,7 @@ const CategoryPage: NextPage = () => {
       <Box textAlign="center">
         <Grid container justifyContent="center">
           <Grid textAlign="center" item xs={12} sm={8} md={7} lg={6}>
-            <Typography my={10} sx={{ typography: { sm: "h5", lg: "h4" } }}>
+            <Typography my={10}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
