@@ -1,10 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { useRouter } from "next/router";
+
+import { Nav } from "components/Nav/Nav.component";
 
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 export const NavBar = () => {
   const router = useRouter();
+  const theme = useTheme();
+  const isSmallDevice = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <Box
       display="flex"
@@ -13,7 +18,7 @@ export const NavBar = () => {
       mb={2}
     >
       <Typography onClick={() => router.push("/")}>Full Name</Typography>
-      <MenuOutlinedIcon />
+      {isSmallDevice ? <Nav /> : <MenuOutlinedIcon />}
     </Box>
   );
 };
