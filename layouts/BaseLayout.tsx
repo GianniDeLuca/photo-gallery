@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { UIProvider } from "contexts/ui/ui.provider";
 
 import { NavBar } from "components/NavBar/NavBar.component";
 import { SideBar } from "components/SideBar/SideBar.component";
@@ -11,10 +12,12 @@ interface Props {
 
 export const BaseLayout: FC<Props> = ({ children }) => {
   return (
-    <Box m={3}>
-      <NavBar />
-      <SideBar />
-      {children}
-    </Box>
+    <UIProvider>
+      <Box m={3}>
+        <NavBar />
+        <SideBar />
+        {children}
+      </Box>
+    </UIProvider>
   );
 };
