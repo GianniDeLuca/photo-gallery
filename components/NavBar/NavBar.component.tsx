@@ -1,5 +1,4 @@
-import { Box, Typography, useMediaQuery, useTheme, Link } from "@mui/material";
-import { useRouter } from "next/router";
+import { Box, useMediaQuery, useTheme, Link } from "@mui/material";
 import NextLink from "next/link";
 
 import { Nav } from "components/Nav/Nav.component";
