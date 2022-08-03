@@ -9,7 +9,7 @@ const CategoryPage: NextPage = () => {
     <BaseLayout>
       <Box textAlign="center">
         <Grid container justifyContent="center">
-          <Grid textAlign="center" item xs={12} sm={8} md={7} lg={6}>
+          <Grid textAlign="center" item xs={12} sm={8} md={7} lg={8}>
             <Typography my={10}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
