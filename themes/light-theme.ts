@@ -7,13 +7,13 @@ export const lightTheme = createTheme({
   typography: {
     body1: {
       "@media (min-width:600px)": {
-        fontSize: "1.5rem",
+        fontSize: "1.1rem",
       },
       "@media (min-width:900px)": {
-        fontSize: "1.9rem",
+        fontSize: "1.4rem",
       },
       "@media (min-width:1200px)": {
-        fontSize: "2rem",
+        fontSize: "1.5rem",
       },
     },
   },
