@@ -1,24 +1,20 @@
-import { Box, Link } from "@mui/material";
-import NextLink from "next/link";
+import { Box } from "@mui/material";
 import { FC } from "react";
 
 interface Props {
   direction?: string;
+  children: React.ReactNode;
 }
 
-export const Nav: FC<Props> = ({ direction = "row" }) => {
+export const Nav: FC<Props> = ({ direction = "row", children }) => {
   return (
-    <Box display="flex" flexDirection={direction === "row" ? "row" : "column"}>
-      <NextLink href="/" passHref>
-        <Link color="GrayText" fontSize="1.2rem" underline="hover" mr={4}>
-          Work
-        </Link>
-      </NextLink>
-      <NextLink href="/" passHref>
-        <Link fontSize="1.2rem" underline="hover" color="GrayText">
-          Contact
-        </Link>
-      </NextLink>
-    </Box>
+    <nav>
+      <Box
+        display="flex"
+        flexDirection={direction === "row" ? "row" : "column"}
+      >
+        {children}
+      </Box>
+    </nav>
   );
 };

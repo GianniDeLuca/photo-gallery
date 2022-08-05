@@ -6,6 +6,7 @@ import { Box, useMediaQuery, useTheme, Link } from "@mui/material";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 import { Nav } from "components/Nav/Nav.component";
+import { NavLink } from "components/NavLink/NavLink.component";
 
 export const NavBar = () => {
   const theme = useTheme();
@@ -25,7 +26,10 @@ export const NavBar = () => {
         </Link>
       </NextLink>
       {isSmallDevice ? (
-        <Nav />
+        <Nav>
+          <NavLink href="/" text="Work" mr={3} />
+          <NavLink href="/contact" text="Contact" />
+        </Nav>
       ) : (
         <MenuOutlinedIcon onClick={() => toggleSideBar(true)} />
       )}

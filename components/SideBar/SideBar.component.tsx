@@ -1,4 +1,5 @@
 import { Nav } from "components/Nav/Nav.component";
+import { NavLink } from "components/NavLink/NavLink.component";
 
 import { Box, Drawer } from "@mui/material";
 import { useContext } from "react";
@@ -13,7 +14,10 @@ export const SideBar = () => {
       onClose={() => toggleSideBar(false)}
     >
       <Box p={5}>
-        <Nav direction="column" />
+        <Nav direction="column">
+          <NavLink href="/" text="Work" mb={1} />
+          <NavLink href="/contact" text="Contact" />
+        </Nav>
       </Box>
     </Drawer>
   );
