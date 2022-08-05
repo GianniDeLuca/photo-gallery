@@ -13,7 +13,7 @@ interface Props {
 export const BaseLayout: FC<Props> = ({ children }) => {
   return (
     <UIProvider>
-      <Box m={3}>
+      <Box m={3} maxWidth={1240} mx="auto">
         <NavBar />
         <SideBar />
         {children}
