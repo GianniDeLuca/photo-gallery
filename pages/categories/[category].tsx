@@ -22,7 +22,7 @@ const CategoryPage: NextPage = () => {
         <Grid container>
           <Grid item xs={12}>
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562102954840-OPQ2S3VR9JDZS2XLMAAT/65.jpg?format=2500w"
+              src="https://picsum.photos/seed/picsum/2500/1667"
               height={1667}
               width={2500}
               alt="placeholder image"
@@ -30,7 +30,7 @@ const CategoryPage: NextPage = () => {
           </Grid>
           <Grid item xs={12}>
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562102954840-OPQ2S3VR9JDZS2XLMAAT/65.jpg?format=2500w"
+              src="https://picsum.photos/seed/picsum/2500/1667"
               height={1667}
               width={2500}
               alt="placeholder image"
@@ -38,7 +38,7 @@ const CategoryPage: NextPage = () => {
           </Grid>
           <Grid item xs={12}>
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562102954840-OPQ2S3VR9JDZS2XLMAAT/65.jpg?format=2500w"
+              src="https://picsum.photos/seed/picsum/2500/1667"
               height={1667}
               width={2500}
               alt="placeholder image"

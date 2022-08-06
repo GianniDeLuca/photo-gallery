@@ -6,32 +6,27 @@ const categories = [
   {
     categoryTitle: "Peaks",
     categoryId: 1,
-    categoryImage:
-      "https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562710262349-VSOYX8VZYQQF5JF5HOV9/65.jpg?format=1000w",
+    categoryImage: "https://picsum.photos/seed/picsum/600",
   },
   {
     categoryTitle: "Coast",
     categoryId: 2,
-    categoryImage:
-      "https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562710303726-HN4N2S110UN9FFW6SQ9K/1.jpg?format=1000w",
+    categoryImage: "https://picsum.photos/seed/picsum/600",
   },
   {
     categoryTitle: "Wildlife",
     categoryId: 3,
-    categoryImage:
-      "https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562710337910-ETNNKGNBU2IPDFJFZAC7/3.jpg?format=1000w",
+    categoryImage: "https://picsum.photos/seed/picsum/600",
   },
   {
     categoryTitle: "Seafaring",
     categoryId: 4,
-    categoryImage:
-      "https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562710379262-HJY43PPFCTN2331DQ67P/73.jpg?format=1000w",
+    categoryImage: "https://picsum.photos/seed/picsum/600",
   },
   {
     categoryTitle: "Horizon",
     categoryId: 5,
-    categoryImage:
-      "https://images.squarespace-cdn.com/content/v1/5cdc8db64d546e01b837cea4/1562710947533-PD7S2GHDGL0WJXMOCTUR/download+%2811%29.jpeg?format=1000w",
+    categoryImage: "https://picsum.photos/seed/picsum/600",
   },
 ];
 
